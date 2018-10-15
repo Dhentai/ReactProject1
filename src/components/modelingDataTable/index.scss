@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  //overflow: hidden;
+  //overflow-y: auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: none;
+}
+.leftSide{
+  span{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.73);
+  }
+}
+.rightSide{
+  display: flex;
+  align-items: center;
+}
+.tableFilter{
+  :global(.ant-input-number) {
+    margin: 0 10px;
+  }
+}
+.tableContent{
+  flex: auto;
+  font-size: 14px;
+}

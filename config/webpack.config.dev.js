@@ -88,6 +88,10 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+      "@":path.resolve("src"),
+      "@component":path.resolve("src/component"),
+      "@pages":path.resolve("src/pages"),
+      "@utils":path.resolve("src/utils"),
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
@@ -191,7 +195,13 @@ module.exports = {
           },
           {
               test:/\.scss$/,
+              exclude: path.resolve('src/styles'),
               loaders:['style-loader','css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]','sass-loader']
+          },
+          {
+              test:/\.scss$/,
+              include: path.resolve('src/styles'),
+              loaders:['style-loader','css-loader','sass-loader']
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.

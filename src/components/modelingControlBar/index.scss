@@ -1,0 +1,13 @@
+.controlBar{
+  display: flex;
+  justify-content: flex-end;
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+  //right: 0;
+  padding: 10px 24px;
+  background-color: #e3e8ec;
+  :global(.btnItem){
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,39 @@
+.layout{
+  height: 100vh;
+  :global(.ant-layout-header){
+    display: flex;
+    justify-content: space-between;
+    .leftSide{
+      display: flex;
+      .logo{
+        margin: 16px 28px 16px 0;
+        img{
+          vertical-align: super;
+          height: 32px;
+          width: auto;
+        }
+      }
+    }
+    .rightSide{
+      display: flex;
+      color: white;
+    }
+  }
+  :global(.ant-layout-content){
+    display: flex;
+    flex-direction: column;
+    .breadcrumb{
+      flex: none;
+    }
+    .mainContainer{
+      position: relative;
+      display: flex;
+      flex: auto;
+      background: #fff;
+      min-height: 280px;
+    }
+  }
+  :global(.ant-layout-footer){
+
+  }
+}

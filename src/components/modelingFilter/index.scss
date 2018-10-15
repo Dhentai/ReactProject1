@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  margin-bottom: 20px;
+  :global(.ant-checkbox-group-item){
+    display: block;
+    margin-bottom: 10px;
+  }
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.bottom{
+}
+.selectorItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.itemLabel{
+  flex-shrink: 0;
+  min-width: 100px;
+}
+.selector{
+  width: 100%;
+}
+.inputItem{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  span{
+    flex-shrink: 0;
+  }
+}
